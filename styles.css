@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+    
+    background-color: rgba(91, 247, 13, 0.211);;
+    width: 100%;
+    /* height: 60px; */
+    height: 6vh;
+    /* border: 1px solid black; */
+}
+
+.encabezado__emojis {
+    font-size:30px;
+}
+
+.encabezado__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.productos {
+    /* position: relative;
+    top: 6vh; */
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    /* overflow-y: scroll; */
+    margin-bottom: 30px;
+    border: 2px solid green;
+    background-color: rgb(167, 212, 228);
+}
+
+.productos__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.productos__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style-type: none;
+    width: auto;
+    height: auto; /* Aquí creo que debe ser: auto */
+    margin: 20px 10px 20px 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    border: 1px solid rgb(16, 1, 1);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    height: auto;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px gray;
+    border: 1px solid darkgray;
+    background-color: rgb(245, 245, 245);
+    margin: 5px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px gray;
+}
+
+.card__img {
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    /* border: 1px solid red; */
+}
+
+.card__valor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+
+}
+
+.card__trash {
+    width:22px;
+    height:26px; /* +4 de width */
+    background-image: url(./images/SolidTrashCan_White.svg);
+    background-size: cover;
+}
+
+.card__trash:hover {
+    background-image: url(./images/SolidTrashCan_Black.svg);
+}
+
+.card__boton {
+    border: none;
+}
+
+.formulario {
+    position: relative;
+    /* top: 60px; */
+    top: 6vh;
+    width: 100%;
+    height: 55vh;
+    /* margin: 20px 10px 20px 10px; */
+
+    border: 1px solid crimson;
+    /* background-color: burlywood; */
+}
+
+.formulario__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.formulario__data {
+    display: flex;
+    flex-direction: column;
+
+    height: 200px; /* Aquí creo que debe ser: auto */
+    margin: 20px 10px 0px 10px;
+    padding: 5px;
+    gap: 15px;
+
+    /* border: 1px solid gray; */
+}
+
+.formulario__input {
+    height: 40px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.formulario__botones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario__boton {
+    height: 35px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: normal;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    /* height: 80px; */
+    height: 8vh;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: rgba(91, 247, 13, 0.211);
+}
+
+.footer__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+    
+    /* font-size: medium; */
+}
+
+.footer__emoji {
+    font-size:15px;
+}
+
+.footer__titulo {
+    font-weight: bold;
+}
+
+.footer__creador {
+    font-size:12px;
+}
+
+.footer__cliente {
+    font-size:12px;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+
+/* Desktop: */
+@media (min-width:768px){
+    .principal {
+        display: flex;
+        flex-direction: row;
+        /* height: auto; */
+        /* background-color: rgb(255, 223, 82); */
+    }
+
+    .productos {
+        position: relative;
+        top: 6vh;
+        width: 70%;
+        height: 86vh;
+        overflow-y: scroll;
+    }
+
+    .formulario {
+        width: 30%;
+        height: 86vh;
+    }
+
+    .productos__cards {
+        gap: 20px;
+    }
+
+    .card {
+        width: 25%;
+    }
+}

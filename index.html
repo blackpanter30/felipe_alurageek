@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge AluraGeek</title>
+        <link rel="stylesheet" href="./styles.css"> <!-- Vinculamos la hoja de estilos. -->
+    </head>
+
+    <body>
+        <!-- Encabezado de la App: -->
+        <header class="encabezado">
+            <p class="encabezado__emojis">👉🏻</p> <!-- Mano derecha -->
+            <h1 class="encabezado__titulo">AluraGeek</h1>
+            <p class="encabezado__emojis">👈🏻</p> <!-- Mano izquierda -->
+        </header>
+
+        <!-- Cuerpo Principal de la App: -->
+        <main class="principal">
+            <!-- Sección Productos: -->
+            <section class="productos">
+                <h2 class="productos__titulo"> Mis Productos: </h2>
+                <ul class="productos__cards" data-lista></ul>
+            </section>
+
+            <!-- Sección de Formulario: -->
+            <section class="formulario">
+                <h2 class="formulario__titulo"> Agregar producto: </h2>
+                <form class="formulario__data" data-formulario>
+                    <input class="formulario__input" type="text" name="nombre" placeholder="Nombre producto..." required data-nombre>  
+                    <input class="formulario__input" type="text" name="precio" placeholder="Precio..." required data-precio>  
+                    <input class="formulario__input" type="text" name="imagen" placeholder="Imagen..." required data-imagen>  
+                    <div class="formulario__botones">
+                        <input class="formulario__boton" type="submit" value="Enviar"/>
+                        <button class="formulario__boton"> Limpiar </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- Pie de página de la App: -->
+        <footer class="footer">
+            <div class="footer__logo">
+                <p class="footer__emoji">👉🏻</p> <!-- Mano derecha -->
+                <p class="footer__titulo">AluraGeek</>
+                <p class="footer__emoji">👈🏻</p> <!-- Mano izquierda -->
+                
+            </div>
+            <p class="footer__creador"> Desarrollado por <span>Felipe Saldarriaga</span> </p>
+            <p class="footer__cliente"> Alura LATAM <span>2024</span> </p>
+        </footer>
+
+        <script src="./js/mostrarProductos.js" type="module"></script>
+        <script src="./js/crearProducto.js" type="module"></script>
+        <script src="./js/borrarProducto.js"></script>
+    </body>
+</html>

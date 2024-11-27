@@ -1,0 +1,40 @@
+{
+  "productos": [
+    {
+      "id": "c108",
+      "nombre": "MT 09-2021",
+      "precio": "$52.900.000",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_770582-MCO79848036485_102024-O.webp"
+    },
+    {
+      "id": "ca32",
+      "nombre": "Bicicleta roadmaster negra",
+      "precio": "$611.003",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_919792-MLU77500565640_072024-F.webp"
+    },
+    {
+      "id": "9a99",
+      "nombre": "Computador portatil gamer",
+      "precio": "$5.524.999",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_907283-MLU70395474468_072023-F.webp"
+    },
+    {
+      "id": "d360",
+      "nombre": "Play 5",
+      "precio": "$4.069.900",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_953550-MLA80457239548_112024-F.webp"
+    },
+    {
+      "id": "d301",
+      "nombre": "Televisor Hyundai 50 Pulgadas Smart 4k",
+      "precio": "$1.329.900",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_788217-MLA79416615238_092024-F.webp"
+    },
+    {
+      "id": "f303",
+      "nombre": "Amazon Echo Dot 5th Gen Con Asistente Virtual Alexa 110V/240V Color Negro",
+      "precio": "$212.900",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_976672-MLU72754995740_112023-F.webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "challenge_alurageek",
+  "version": "1.0.0",
+  "description": "Aplicación Alurageek",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe Saldarriaga",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
